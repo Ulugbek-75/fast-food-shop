@@ -1,16 +1,13 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from test import x
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def django_syntax(x):
+    x = x.replace("assets", "{% static 'assets")
+    x = x.replace(".js", ".js' %}")
+    x = x.replace(".css", ".css' %}")
+    x = x.replace(".jpg", ".jpg' %}")
+    x = x.replace(".png", ".png' %}")
+    return x
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(django_syntax(x))
