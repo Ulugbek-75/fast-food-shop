@@ -44,11 +44,11 @@ class Food(models.Model):
 
 
 
-# class Contact(models.Model):
-#     your_name = models.CharField(max_length=255)
-#     your_email = models.EmailField(max_length=255)
-#     subject = models.CharField(max_length=255)
-#     message = models.CharField(max_length=255)
-#
-#     def __str__(self):
-#         return self.your_name
+class Contact(models.Model):
+    your_name = models.CharField(max_length=255)
+    your_email = models.EmailField(max_length=255)
+    subject = models.CharField(max_length=255)
+    message = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.your_name
